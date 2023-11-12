@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+  
+  }
+  
+  body {
+    overflow: hidden;
+    font-size: medium;
+    /* display: flex; */
+
+  }
+  
+  label>select{
+    min-width: fit-content;
+    padding: 2px;
+  }
+  
+  .flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  
+    flex-wrap: wrap;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    gap: 10px;
+  }
+
+  utillities
+  .btn {
+    cursor: pointer;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-top: 2px;
+  }
+  
+  .btn:hover {
+    border: 1px solid orangered;
+    box-shadow: 1px 5px 5px orangered;
+    border-radius: 10px;
+    color: orangered;
+    transition: border-radius 1s ease;
+  }
+  
+  /* Entrence Screen */
+  .entrence-screen {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("img/minecraft-header.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+
+  .tools,
+  .materials,
+  .arrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tools > *,
+  .materials > * {
+    margin-top: 30px;
+  }
+  
+  .arrows i {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+
+  
+
+  /* viewed screen */
+  .container {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+  }
+  
+  /* left side -- Game */
+  .game-container--left-side {
+    margin: 0;
+    overflow-y: hidden;
+    height: 99vh;
+
+  }
+  
+  .game-grid {
+    margin: 0 100px;
+    border: 1px solid black;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    background: rgb(149, 215, 241);
+  }
+  
+  .box {
+    background: rgb(149, 215, 241);
+    border: 1px transparent;
+  }
+  
+  .box:hover {
+    border: 1px solid white;
+    cursor: pointer;
+  }
+  
+  /* right side - menu */
+  
+  /* tool box */
+  .tool-box--right-side {
+    background-color: rgb(14, 13, 13);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tool-box--right-side button {
+    color: #fff;
+    border: 1px solid grey;
+  }
+  
+  /* tools */
+  .picaxe,
+  .shovel,
+  .axe {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    width: 65px;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .picaxe:hover,
+  .shovel:hover,
+  .axe:hover {
+    opacity: 1;
+  }
+  
+  .picaxe > img,
+  .shovel > img,
+  .axe > img {
+    width: 3.5rem;
+  }
+  
+  .tool-box--right-side button {
+    width: 150px;
+    padding: 5px;
+    margin-top: 8px;
+  }
+  
+  /* inventory */
+  .inventory {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    margin-top: 12%;
+  }
+  
+  .item {
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  .item:hover {
+    opacity: 1;
+  }
+  
+  .item h4 {
+    margin-top: 10px;
+  }
+  
+  .timer {
+    border-radius: 40%;
+  }
+  
+  /* player materials */
+  .cloud {
+    background: url("img/cloud.png") no-repeat center/cover;
+  }
+  
+  .grass {
+    transition: background 0.5s linear;
+    background: url("img/grass.png") no-repeat center/cover;
+  }
+  
+  .rock {
+    transition: background 0.5s ease;
+    background: url("img/rock.png") no-repeat center/cover;
+  }
+  
+  .soil {
+    background: url("img/soil.jpg") no-repeat center/cover;
+    transition: background 0.5s ease;
+  }
+  
+  .leaves {
+    background: url("img/tree-leaves.png") no-repeat center/cover;
+    transition: background 0.5s ease;
+  }
+  
+  .wood {
+    background: url("img/wood.png") no-repeat center/cover;
+    transition: background 1s ease;
+  }
+  
+  .blue {
+    background: rgba(84, 84, 156, 0.527);
+  }
+  
+  .red {
+    background: rgb(236, 68, 7)
+  }
